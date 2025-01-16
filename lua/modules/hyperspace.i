@@ -633,7 +633,7 @@ playerVariableType playerVariables;
 %rename("%s") LocationEvent::Choice::hiddenReward;
 %rename("%s") LocationEvent::text;
 //%rename("%s") LocationEvent::ship; ShipEvent not exposed
-//%rename("%s") LocationEvent::stuff; ResourceEvent not exposed
+%rename("%s") LocationEvent::stuff;
 %rename("%s") LocationEvent::environment;
 %rename("%s") LocationEvent::environmentTarget;
 %rename("%s") LocationEvent::store; 
@@ -653,7 +653,7 @@ playerVariableType playerVariables;
 %rename("%s") LocationEvent::spaceImage;
 %rename("%s") LocationEvent::planetImage;
 %rename("%s") LocationEvent::eventName;
-//%rename("%s") LocationEvent::reward; ResourceEvent not exposed
+%rename("%s") LocationEvent::reward;
 %rename("%s") LocationEvent::boarders;
 %rename("%s") LocationEvent::choices;
 %rename("%s") LocationEvent::unlockShip;
@@ -689,7 +689,7 @@ playerVariableType playerVariables;
 %rename("%s") ChoiceBox::centered;
 %rename("%s") ChoiceBox::gap_size;
 %rename("%s") ChoiceBox::openTime;
-// %rename("%s") ChoiceBox::rewards; ResourceEvent not exposed
+%rename("%s") ChoiceBox::rewards;
 %rename("%s") ChoiceBox::currentTextColor;
 %rename("%s") ChoiceBox::lastChoice;
 
@@ -697,7 +697,33 @@ playerVariableType playerVariables;
 %rename("%s") ChoiceText;
 %rename("%s") ChoiceText::type;
 %rename("%s") ChoiceText::text;
-//%rename("%s") ChoiceText::rewards; ResourceEvent not exposed
+%rename("%s") ChoiceText::rewards;
+
+%rename("%s") ResourceEvent;
+%rename("%s") ResourceEvent::missiles;
+%rename("%s") ResourceEvent::fuel;
+%rename("%s") ResourceEvent::drones;
+%rename("%s") ResourceEvent::scrap;
+%rename("%s") ResourceEvent::crew;
+%rename("%s") ResourceEvent::traitor;
+%rename("%s") ResourceEvent::cloneable;
+%rename("%s") ResourceEvent::cloneText;
+%rename("%s") ResourceEvent::crewType;
+%rename("%s") ResourceEvent::weapon;
+%rename("%s") ResourceEvent::drone;
+%rename("%s") ResourceEvent::augment;
+%rename("%s") ResourceEvent::crewBlue;
+%rename("%s") ResourceEvent::systemId;
+%rename("%s") ResourceEvent::weaponCount;
+%rename("%s") ResourceEvent::droneCount;
+%rename("%s") ResourceEvent::steal;
+%rename("%s") ResourceEvent::intruders;
+%rename("%s") ResourceEvent::fleetDelay;
+%rename("%s") ResourceEvent::hullDamage;
+%rename("%s") ResourceEvent::upgradeAmount;
+%rename("%s") ResourceEvent::upgradeId;
+%rename("%s") ResourceEvent::upgradeSuccessFlag;
+%rename("%s") ResourceEvent::removeItem;
 
 %nodefaultctor CombatControl;
 %nodefaultdtor CombatControl;
